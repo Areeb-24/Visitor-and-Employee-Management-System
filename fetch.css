@@ -1,0 +1,46 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 13% 35%;
+    padding: 2% 0%;
+    background-color: rgb(237, 191, 134);
+    background-size: cover;
+    width: 30%;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+a{
+    font-size: large;
+    margin-left: 28%;
+}
+
+.print-btn {
+    width: 4rem;
+    height: 1.5rem;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-left: 35%;
+    /* padding: 10px 20px; */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media print {
+    .print-btn,
+    a { /* Hide print button and links when printing */
+        display: none !important;
+    }
+}
